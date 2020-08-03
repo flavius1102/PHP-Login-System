@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="uk-margin">
-                <button class="uk-button uk-button-default" type="submit">Login</button>
+                <button class="uk-button uk-button-default" type="submit">Login button</button>
             </div>
         </form>
 
