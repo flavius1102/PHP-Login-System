@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $email = Filter::String($_POST['email']);
 
-    $user_found = findUser($con, $email);
+    $user_found = User::find($email, true);
 
     if ($user_found) {
         // User exists

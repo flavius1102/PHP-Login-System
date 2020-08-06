@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     $email = Filter::String($_POST['email']);
     $password = $_POST['password'];
 
-    $user_found = findUser($con, $email, true);
+    $user_found = User::find($email, true);
 
     if ($user_found) {
         // User exists, try and sign them in
