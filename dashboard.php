@@ -3,7 +3,11 @@
 // Allow the config
 define('__CONFIG__', true);
 
-require_once 'inc/config.php'; ?>
+require_once 'inc/config.php';
+
+forceLogin();
+
+?>
 
 <!<!doctype html>
 <html lang="en">
@@ -19,14 +23,9 @@ require_once 'inc/config.php'; ?>
 <body>
 
 <div class="uk-section uk-container">
-    <?php
-        echo 'Hello World, today is: ';
-        echo date("Y.m.d.");
-    ?>
-    <p>
-        <a href="php_login_course/login.php">Login</a>
-        <a href="php_login_course/register.php">Register</a>
-    </p>
+    <h2>Dashboard</h2>
+    <p>You are signed in as user: <?php echo $_SESSION['user_id']; ?></p>
 </div>
 
 <?php require_once "inc/footer.php"; ?>
+

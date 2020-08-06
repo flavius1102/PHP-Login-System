@@ -3,7 +3,11 @@
 // Allow the config
 define('__CONFIG__', true);
 
-require_once 'inc/config.php'; ?>
+require_once 'inc/config.php';
+
+forceDashboard();
+
+?>
 
 <!<!doctype html>
 <html lang="en">

@@ -35,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
         $_SESSION['user_id'] = (int)$user_id;
 
-        $return['redirect'] = 'php_login_course/dashboard.php?message=welcome';
+        $return['redirect'] = 'php_login_course/dashboard.php';
         $return['is_logged_in'] = true;
     }
 
